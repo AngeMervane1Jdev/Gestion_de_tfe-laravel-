@@ -16,14 +16,14 @@
 
  
         <div class="carousel-item active">
-        <img class="d-block w-100" src="{{asset('images/img7.jpg')}}" alt="First slide">
+        <img class="d-block w-100" src="{{ secure_asset('images/img7.jpg')}}" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                 <h2 style="color:white">Tous les travaux de fin d'étude <br> à votre disposition.</h2>
                <p><a href="#tfe" class="consult-btn">Consulter</a></p>
                 </div>
         </div>
         <div class="carousel-item ">
-        <img class="d-block w-100" src="{{asset('images/img3.jpg')}}" alt="First slide">
+        <img class="d-block w-100" src="{{ secure_asset('images/img3.jpg')}}" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                 <h2 style="color:white">Vous êtes étudiant ? <br> Inscrivez vous pour le depôt de votre tfe</h2>
                 @if(Auth::user()!=null)
@@ -36,7 +36,7 @@
                 </div>
         </div>
         <div class="carousel-item ">
-        <img class="d-block w-100" src="{{asset('images/img6.jpg')}}" alt="First slide">
+        <img class="d-block w-100" src="{{ secure_asset('images/img6.jpg')}}" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                 <h2 style="color:white">Vous êtes étudiant, <br> Et vous avez déjà un compte, Connectez vous.</h2>
                 @if(Auth::user()!=null)
@@ -48,7 +48,7 @@
                 </div>
         </div>
         <div class="carousel-item ">
-        <img class="d-block w-100" src="{{asset('images/img5.jpg')}}" alt="First slide">
+        <img class="d-block w-100" src="{{ secure_asset('images/img5.jpg')}}" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                 <h2 style="color:white">Vous êtes déja connecté?<br> Déposé votre tfe.</h2>
                   <p><a class="btn" style="background-color:  rgb(0, 68, 255);color:white" href="{{ route('tfe.create') }}"><span>{{ __("Déposer") }}</span></a></p>
